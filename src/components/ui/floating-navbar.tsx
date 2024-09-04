@@ -45,26 +45,24 @@ export const FloatingNav = ({
     <AnimatePresence mode="wait">
       <motion.div
         className={cn(
-          "flex max-w-3xl fixed top-10 inset-x-0 mx-auto border border-transparent bg-slate-800 rounded-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-8 py-2  items-center justify-between space-x-2",
+          "flex items-center justify-between max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-5xl fixed top-10 inset-x-0 mx-auto border border-transparent bg-slate-800 rounded-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] ps-2 pe-4 sm:px-8 sm:space-x-2 sm:py-2",
           className
         )}
       >
-        <button className="flex text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
+        <Link href="#home" className="relative flex text-sm font-medium border-neutral-200 text-white px-4 py-2 rounded-full">
           <img alt="SnapNews Logo" src="/logo.svg" className="h-8 w-auto" />
-          <p className="font-rubik pl-2 text-xl font-medium text-white">
-            SnapNews
-          </p>
-        </button>
-        <div className="flex">
+          <p className="font-rubik pl-2 text-xl font-medium hidden sm:block">SnapNews</p>
+        </Link>
+        <div className="flex text-white">
           {navItems.map((navItem: any, idx: number) => (
             <Link
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative dark:text-neutral-50 items-center flex space-x-1 py-2 px-4 text-white hover:bg-gradient-to-b hover:from-slate-600 hover:to-slate-700 hover:shadow-lg hover:rounded-lg transition duration-300 ease-in-out"
+                "flex items-center space-x-1 py-2 px-2 md:px-4 hover:bg-gradient-to-b hover:from-slate-600 hover:to-slate-700 rounded-lg transition duration-300 ease-in-out"
               )}
             >
-              <span className="hidden sm:block text-sm font-rubik font-light">
+              <span className="text-sm sm:text-md font-rubik font-light">
                 {navItem.name}
               </span>
             </Link>

@@ -19,6 +19,35 @@ const config: Config = {
       rubik: ["Rubik", "sans-serif"],
     },
     extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-radial-at-t":
+          "radial-gradient(at top, var(--tw-gradient-stops))",
+        "gradient-radial-at-b":
+          "radial-gradient(at bottom, var(--tw-gradient-stops))",
+        "gradient-radial-at-l":
+          "radial-gradient(at left, var(--tw-gradient-stops))",
+        "gradient-radial-at-r":
+          "radial-gradient(at right, var(--tw-gradient-stops))",
+        "gradient-radial-at-tl":
+          "radial-gradient(at top left, var(--tw-gradient-stops))",
+        "gradient-radial-at-tr":
+          "radial-gradient(at top right, var(--tw-gradient-stops))",
+        "gradient-radial-at-bl":
+          "radial-gradient(at bottom left, var(--tw-gradient-stops))",
+        "gradient-radial-at-br":
+          "radial-gradient(at bottom right, var(--tw-gradient-stops))",
+      },
+      boxShadow: {
+        "custom-white": "0 4px 100px 80px rgba(255,255,255,1)",
+        "custom-black": "0 -4px 6px -1px rgba(0,0,0,0.1)",
+        "custom-blue": "0 0 120px 2px rgba(56, 107, 246,1)",
+        "custom-green": "0 8px 120px 2px rgba(38, 66, 34,1)",
+      },
+      spacing: {
+        "128": "32rem", // Custom width class
+        "144": "36rem", // Custom height class
+      },
       colors: {
         snapNewsColor: {
           blue: "#386BF6",
@@ -26,6 +55,10 @@ const config: Config = {
       },
       borderRadius: {
         "45": "45px",
+        "30": "30px",
+      },
+      width: {
+        "94": "23rem",
       },
       animation: {
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
@@ -75,6 +108,7 @@ const config: Config = {
   /* custom plugins for Tailwind CSS. In this specific case, the plugins are adding utility classes for background images
   using SVG data URIs. */
   plugins: [
+    require("@tailwindcss/typography"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
