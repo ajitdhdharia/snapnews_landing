@@ -65,7 +65,7 @@ const Home = () => {
               </p>
               <div className="mt-2">
                 <Link
-                  href="business@snapnews.ai"
+                  href="mailto:business@snapnews.ai"
                   className="flex rounded-md border border-transparent text-white shadow-2xl px-10 py-4 items-center border-neutral-300 text-sm hover:-translate-y-1 transform transition duration-200 font-light bg-gradient-to-b from-snapNewsColor-blue to-blue-500"
                 >
                   <div className="flex flex-col">
