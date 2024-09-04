@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Snapnews",
-  description: "Providing news in under 60 words",
+  description: "News simplified",
 };
 
 export default function RootLayout({
