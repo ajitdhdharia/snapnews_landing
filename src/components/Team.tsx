@@ -83,6 +83,7 @@ const Team = () => {
                     width={175}
                     height={175}
                     className="rounded-3xl p-1"
+                    loading="lazy"
                   />
                 </div>
               </div>

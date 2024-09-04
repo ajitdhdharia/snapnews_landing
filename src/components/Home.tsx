@@ -85,6 +85,7 @@ const Home = () => {
                 src="/snapNewsHome.svg"
                 alt="home screen"
                 className="absolute top-4 object-cover rounded-3xl border-t-2 border-r-2 border-l-2 border-snapNewsColor-blue border-dashed"
+                loading="lazy"
               />
             </div>
           </div>

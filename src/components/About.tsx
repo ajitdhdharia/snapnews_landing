@@ -70,6 +70,7 @@ export function About() {
                     width={350}
                     height={600}
                     className="absolute top-0 left-0 object-contain rounded-t-xl pt-2 px-2"
+                    loading="lazy"
                   />
                 </div>
 

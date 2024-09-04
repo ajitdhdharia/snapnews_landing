@@ -79,6 +79,7 @@ export const Feature = () => {
                     width={350}
                     height={350}
                     className="absolute -bottom-12 left-3 lg:left-24 object-cover"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -92,6 +93,7 @@ export const Feature = () => {
                     width={475}
                     height={475}
                     className="absolute -bottom-4 left-5 rounded-xl"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -121,6 +123,7 @@ export const Feature = () => {
                     width={475}
                     height={475}
                     className="absolute -bottom-2 rounded-xl"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -142,6 +145,7 @@ export const Feature = () => {
                     width={450}
                     height={450}
                     className="absolute -bottom-12 left-8 object-cover"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -155,6 +159,7 @@ export const Feature = () => {
                     width={475}
                     height={475}
                     className="absolute -bottom-4 left-5 rounded-xl"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -184,6 +189,7 @@ export const Feature = () => {
                     width={475}
                     height={475}
                     className="absolute -bottom-2 rounded-xl"
+                    loading="lazy"
                   />
                 </div>
               </div>
